@@ -1,32 +1,44 @@
-# Astro Starter Kit: Basics
+# CSE 134B – HW4: Astro Blog & Multi-Page Website
 
-```sh
-npm create astro@latest -- --template basics
-```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+https://kate-astro.netlify.app/
 
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
+Here is the structure of the project as it exists now:
 
 ```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+src/
+├── assets/
+│ └── (images or future assets)
+│
+├── components/
+│ ├── Footer.astro
+│ ├── Header.astro
+│ ├── Menu.astro
+│ ├── Navigation.astro
+│ ├── Social.astro
+│ └── Welcome.astro
+│
+├── layouts/
+│ ├── BaseLayout.astro
+│ ├── Layout.astro
+│ └── MarkdownPostLayout.astro
+│
+├── pages/
+│ ├── about.astro
+│ ├── blog.astro
+│ ├── index.astro
+│ └── posts/
+│ ├── post-1.md
+│ ├── post-2.md
+│ └── post-3.md
+│
+├── scripts/
+│ └── menu.js
+│
+└── styles/
+└── global.css
 ```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
 ## 🧞 Commands
 
@@ -41,6 +53,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
