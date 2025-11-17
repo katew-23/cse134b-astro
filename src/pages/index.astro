@@ -1,7 +1,25 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-const pageTitle = "Home Page";
+const pageTitle = "Welcome";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  	<h2>My awesome blog subtitle</h2>
+  	<p>
+		Welcome to my Astro project for CSE 134B! I built this site to learn how to use
+		Astro, experiment with components, layouts, and Markdown content, and create
+		a small, organized website.
+	</p>
+
+	<p>Here's what you'll find on this site:</p>
+
+	<ol>
+		<li><strong>About Page</strong> - A short introduction about me using variables, arrays, and conditional rendering in Astro.</li>
+		<li><strong>Blog Page</strong> - A simple blog that lists Markdown posts describing my progress and what I’ve learned.</li>
+		<li><strong>Reusable Layouts</strong> - A shared BaseLayout and PostLayout that keep the site consistent.</li>
+		<li><strong>Responsive Navigation</strong> - A mobile-friendly menu built for the assignment.</li>
+	</ol>
+
+	<p>
+		Feel free to explore the site to see how different pages are structured and how
+		Astro handles templates and components.
+	</p>
 </BaseLayout>

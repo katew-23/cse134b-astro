@@ -1,16 +1,13 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'Welcome to My Astro Blog'
+title: "Getting Started with Astro"
 pubDate: 2025-11-16
-description: 'A quick introduction to this static blog.'
-author: 'Kate Wang'
+description: "My first impressions of Astro and how I set up this project."
+author: Kate Wang
 ---
 
-This is the first post on my Astro-powered blog.
+Today, I officially started working with Astro for our CSE 134B homework. It already feels much more refreshing than building a plain HTML/CSS/JS site from scratch.
 
-Because this site is statically generated, all of the content here is pre-rendered at build
-time. That means the pages load quickly and there is very little JavaScript required for
-the user to read posts.
+The biggest surprise was how easy it is to create pages. Every `.astro` file automatically becomes a page, and the built-in templating keeps everything clean. Setting up `BaseLayout.astro` was also simple, and I like that I can pass props like `pageTitle` into each page to maintain a consistent structure.
 
-I can continue adding posts as Markdown files in the `src/pages/posts` folder, and 
-the home page will automatically list them.
+The site is still pretty empty, but the foundation is there. Now that I understand how layouts and components work, I’m ready to develop the rest of the blog.

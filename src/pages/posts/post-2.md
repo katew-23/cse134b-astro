@@ -1,15 +1,13 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: "Why Use a Static Site Generator?"
+title: "Working with Layouts"
 author: Kate Wang
-description: "Some quick thoughts about SSGs and why they are useful."
+description: "Experimenting with BaseLayout and making pages feel consistent."
 pubDate: 2025-11-16
 ---
 
-Static site generators like Astro let me:
+For this part of the assignment, I focused on how Astro layouts work. I created a `BaseLayout.astro` file that includes the page structure: header, footer, and an `<h1>` for the page title.
 
-- Reuse layouts and components across many pages.
-- Pre-render content so it is fast and SEO-friendly.
-- Keep JavaScript usage minimal, which improves performance and reliability.
+What I like most is the `<slot />` feature. Instead of repeating the same HTML on every page, the layout manages all the structure while each page just adds the content. This keeps the navigation consistent across the entire site, and I can update the design by changing just one file.
 
-For this homework, a blog is a good fit because a single layout can handle many posts.
+This was also the first time I passed variables from a page into a layout. It made the site feel much more organized compared to writing everything directly in HTML.
