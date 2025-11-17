@@ -1,25 +1,16 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'My First Blog Post'
-pubDate: 2022-07-01
-description: 'This is the first post of my new Astro blog.'
-author: 'Astro Learner'
-image:
-    url: 'https://docs.astro.build/assets/rose.webp'
-    alt: 'The Astro logo on a dark background with a pink glow.'
-tags: ["astro", "blogging", "learning in public"]
+title: 'Welcome to My Astro Blog'
+pubDate: 2025-11-16
+description: 'A quick introduction to this static blog.'
+author: 'Kate Wang'
 ---
 
-Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
+This is the first post on my Astro-powered blog.
 
-## What I've accomplished
+Because this site is statically generated, all of the content here is pre-rendered at build
+time. That means the pages load quickly and there is very little JavaScript required for
+the user to read posts.
 
-1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
-
-2. **Making Pages**: I then learned how to make pages by creating new `.astro` files and placing them in the `src/pages/` folder.
-
-3. **Making Blog Posts**: This is my first blog post! I now have Astro pages and Markdown posts!
-
-## What's next
-
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I can continue adding posts as Markdown files in the `src/pages/posts` folder, and 
+the home page will automatically list them.

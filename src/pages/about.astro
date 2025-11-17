@@ -3,22 +3,31 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "About Me";
 
 const identity = {
-  firstName: "Sarah",
-  country: "Canada",
-  occupation: "Technical Writer",
-  hobbies: ["photography", "birdwatching", "baseball"],
+    fullName: "Kate Wang",
+    university: "UC San Diego",
+    major: "Computer Science",
+    year: "Fourth-year",
+    hometown: "Indonesia",
+    currentCity: "San Diego, CA",
+    hobbies: ["Ultimate Frisbee", "Building apps", "Music"],
 };
 
-const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
+const skills = [
+    "HTML", 
+    "CSS", 
+    "JavaScript",
+    "Astro",
+    "React",
+    "C++",
+    "Python",
+    "Software Engineering"
+];
 
-const happy = true;
-const finished = false;
-const goal = 3;
-
-const skillColor = "crimson";
-const fontWeight = "bold";
+const skillColor = "#7C3AED";   
+const fontWeight = "600";
 const textCase = "uppercase";
 ---
+
 <BaseLayout pageTitle={pageTitle}>
   	<style is:global define:vars={{skillColor, fontWeight, textCase}}>
         h1 {
@@ -33,29 +42,34 @@ const textCase = "uppercase";
         }
     </style>
 
-    <h2>... and my new Astro site!</h2>
+    <p>
+        Hi! I'm <strong>{identity.fullName}</strong>, a {identity.year} 
+        <strong>{identity.major}</strong> student at {identity.university}.  
+        I'm originally from <strong>{identity.hometown}</strong> and I’m now based in 
+        <strong>{identity.currentCity}</strong>.
+    </p>
 
-    <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
+    <p>
+        I love working on software projects, learning new web technologies, 
+        and exploring UI/UX design. When I'm not coding, you’ll probably find  
+        me at Ultimate Frisbee practice, playing music, or trying a new local cafe.
+    </p>
 
-    <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
-
-    <p>Here are a few facts about me:</p>
+    <h3>Some Facts About Me</h3>
     <ul>
-    <li>My name is {identity.firstName}.</li>
-    <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
-    {identity.hobbies.length >= 2 &&
-        <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
-    }
+        <li>My name is {identity.fullName}.</li>
+        <li>I study {identity.major} at {identity.university}.</li>
+        <li>I grew up in {identity.hometown}.</li>
+        {identity.hobbies.length >= 2 && (
+            <li>
+            Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}.
+            </li>
+        )}
     </ul>
-    <p>My skills are:</p>
+
+    <h3>My Skills</h3>
     <ul>
-    {skills.map((skill) => <li class="skill">{skill}</li>)}
+        {skills.map((skill) => <li class="skill">{skill}</li>)}
     </ul>
-
-    {happy && <p>I am happy to be learning Astro!</p>}
-
-    {finished && <p>I finished this tutorial!</p>}
-
-    {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
-
+    
 </BaseLayout>

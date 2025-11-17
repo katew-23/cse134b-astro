@@ -1,12 +1,15 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: My Third Blog Post
-author: Astro Learner
-description: "I had some challenges, but asking in the community really helped!"
-image:
-    url: "https://docs.astro.build/assets/rays.webp"
-    alt: "The Astro logo on a dark background with rainbow rays."
-pubDate: 2022-07-15
-tags: ["astro", "learning in public", "setbacks", "community"]
+title: "Future Improvements"
+author: Kate Wang
+description: "Ideas for where this blog could go next."
+pubDate: 2025-11-17
 ---
-It wasn't always smooth sailing, but I'm enjoying building with Astro. And, the [Discord community](https://astro.build/chat) is really friendly and helpful!
+
+Some ideas for future improvements:
+
+1. Add categories or tags and filter posts on the home page.
+2. Add pagination if there are many posts.
+3. Integrate a theme toggle or small interactive widgets on certain pages.
+
+Even with these additions, the core of the site can stay static and fast.

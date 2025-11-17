@@ -29,6 +29,12 @@ h1 {
   padding: 5px 10px;
 }
 
+nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .nav-links {
   width: 100%;
   display: none;
